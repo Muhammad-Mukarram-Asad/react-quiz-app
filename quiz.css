@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.Quiz_div{
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background-color: #252d4a;
+}
+.opening_div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.opening_div p{
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  margin: 10px 0;
+
+}
+#btn_start, #btn_restart, #score_btn{
+  width: 300px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#btn_start:hover{
+  color: blue;
+  background-color: white;
+  border: 2px solid darkblue;
+  border-radius: 10px;
+}
+
+#btn_restart, #score_btn :hover{
+  color: green;
+  background-color: white;
+  border: 2px solid darkgreen;
+  border-radius: 10px;
+}
+
+
+.score-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+
+  }
+  .score-section h1{
+    text-decoration: underline;
+    color: blue;
+  }
+.score-section p{
+  font-size: 26px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: white;
+  background-color: black;
+  margin: 15px;
+}
+.score-section p:hover{
+  cursor: pointer;
+  color: green;
+  background-color: white;
+  font-size: 30px;
+}
+.score-section h2{
+  color: green;
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+}
+  
+  /* QUESTION/TIMER/LEFT SECTION */
+  .question-section {
+    width: 100%;
+    position: relative;
+  }
+  
+  .question-count {
+    margin-bottom: 20px;
+  }
+  
+  .question-count span {
+    font-size: 28px;
+  }
+  
+  .question-text {
+    margin-bottom: 12px;
+  }
+  .answer-section {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  #btn{
+    width: 400px;
+    height: 50px;
+    font-size: 22px;
+    color: white;
+    background-color: #252d4a;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 3px solid #234668;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  #restart_div{
+    width: max-content;
+    height: max-content;
+    display: none;
+    margin: 5px auto;
+
+  }
+  
+  .correct {
+    background-color: #2f922f;
+  }
+  
+  .incorrect {
+    background-color: #ff3333;
+  }
+  
+  #btn:hover {
+    background-color: #555e7d;
+  }
+  
+  
+  /* #btn svg {
+    margin-right: 5px;
+  }
+  .timer-text {
+    background: rgb(230, 153, 12);
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 5px solid rgb(255, 189, 67);
+    border-radius: 15px;
+    text-align: center;
+  }   */
